@@ -8,6 +8,6 @@ RUN apt-get remove -y libxml2-dev libxslt-dev
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 RUN rm -rf /root/.cache/ \
-RUN rm -rf /var/lib/{apt,dpkg}/
+RUN rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 CMD ["parsedmarc", "-c", "/etc/parsedmarc.ini"]
