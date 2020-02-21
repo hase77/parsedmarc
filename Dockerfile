@@ -1,6 +1,6 @@
 FROM python:3.8-slim-buster
 
-ENV PARSEDMARC_VERSION 6.8.2
+ENV PARSEDMARC_VERSION 6.9.0
 RUN apt-get update && apt-get install -y libxml2-dev libxslt-dev
 RUN pip install -U pip setuptools
 RUN pip install -U parsedmarc==$PARSEDMARC_VERSION
